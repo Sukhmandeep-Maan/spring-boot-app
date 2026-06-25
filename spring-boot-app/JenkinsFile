@@ -85,7 +85,7 @@ pipeline {
             steps {
 
                 sh """
-                    sed -i 's#replaceImageTag#${IMAGE_TAG}#g' spring-boot-app-manifests/deployment.yml
+                    sed -i "s#image: .*#image: ${IMAGE_NAME}:${IMAGE_TAG}#g" spring-boot-app-manifests/deployment.yml
                 """
 
                 sh """
