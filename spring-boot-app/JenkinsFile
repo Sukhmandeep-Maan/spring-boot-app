@@ -106,6 +106,7 @@ pipeline {
                 ]) {
 
                     sh '''
+                        git config --global --add safe.directory ${WORKSPACE}
                         git config --global user.name "Sukhman"
                         git config --global user.email "deepsukhman23080@gmail.com"
 
