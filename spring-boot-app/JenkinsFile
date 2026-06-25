@@ -106,8 +106,8 @@ pipeline {
                 ]) {
 
                     sh '''
-                        git config --global user.name "Jenkins"
-                        git config --global user.email "jenkins@local"
+                        git config --global user.name "Sukhman"
+                        git config --global user.email "deepsukhman23080@gmail.coms"
 
                         git add spring-boot-app-manifests/deployment.yml
 
